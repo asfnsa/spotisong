@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="other.css" />
+    <link rel="stylesheet" href="phone.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="nav-bar">
+      <img src="hamurger.svg" alt="" class="hamburger invert" />
+      <div class="left-nav">
+        <img class="logo invert" src="logo.svg" alt="" />
+        <div class="left-nav-box">
+          <img class="home invert" src="home.svg" alt="" />
+          <div class="search-bar">
+            <img class="search invert" src="search.svg" alt="" />
+            <div class="search-box">
+              Top indian singers
+            </div>
+            <!-- <input
+              data-encore-id="formInput"
+              role="combobox"
+              aria-owns="recent-searches-dropdown"
+              aria-controls="recent-searches-dropdown"
+              aria-expanded="true"
+              data-testid="search-input"
+              aria-label="What do you want to play?"
+              data-top-bar-search="true"
+              type="search"
+              spellcheck="false"
+              placeholder="What do you want to play?"
+              tabindex="0"
+            /> -->
+          </div>
+        </div>
+      </div>
+      <div class="right-nav">
+        <div class="heading-1">
+          <p class="heading-1-inner box">Premium</p>
+          <p class="heading-1-inner box">Support</p>
+          <p class="heading-1-inner box">Download</p>
+          <p class="inner2"></p>
+        </div>
+        <div class="logi-sign">
+          <button class="sign">Sign Up</button>
+          <button class="login">Log in</button>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="left-box hidden">
+        <div class="libirary">
+          <div class="left-box-library">
+            <img
+              src="playlist.svg"
+              alt="toggle"
+              class="back-svg toggle-sidebar-icon invert svg"
+            />
+            <p class="library-title">Your library</p>
+          </div>
+          <div class="choose-playlist">
+            <img
+              src="add-circle-stroke-rounded.svg"
+              alt=""
+              class="plus-svg invert"
+            />
+            <p>create</p>
+          </div>
+        </div>
+        <div class="left-box-playlist-item">
+          <!-- <div class="librayry-card">
+            <img
+              src="https://i.scdn.co/image/ab67616d00001e029a5afd03b628b2ba07efdfea"
+              alt=""
+              class="library-img"
+            />
+            <div class="title-track">
+              Mann Ye Mera (From "Metro ... In Dino")
+            </div>
+          </div> -->
+        </div>
+        <div class="down-info">
+          <div>
+            <a
+              href="https://www.spotify.com/in-en/legal/"
+              data-encore-id="textLink"
+              id=""
+            >
+              <span data-encore-id="type">Legal</span>
+            </a>
+          </div>
+          <div>
+            <a
+              href="https://www.spotify.com/in-en/safetyandprivacy/"
+              data-encore-id="textLink"
+              id=""
+            >
+              <span data-encore-id="type">Safety &amp; Privacy Center</span>
+            </a>
+          </div>
+          <div>
+            <a
+              href="https://www.spotify.com/in-en/legal/privacy-policy/"
+              data-encore-id="textLink"
+              id=""
+            >
+              <span data-encore-id="type">Privacy Policy</span>
+            </a>
+          </div>
+          <div>
+            <a
+              href="https://www.spotify.com/in-en/legal/cookies-policy/"
+              data-encore-id="textLink"
+              id=""
+            >
+              <span data-encore-id="type">Cookies</span>
+            </a>
+          </div>
+          <div>
+            <a
+              href="https://www.spotify.com/in-en/legal/privacy-policy/#s3"
+              data-encore-id="textLink"
+              id=""
+            >
+              <span data-encore-id="type">About Ads</span>
+            </a>
+          </div>
+          <div>
+            <a
+              href="https://www.spotify.com/in-en/accessibility/"
+              data-encore-id="textLink"
+              id=""
+            >
+              <span data-encore-id="type">Accessibility</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="right-box full-width">
+        <div class="right-singer-box"></div>
+        <div class="right-box-big-box hidden"></div>
+        <div class="information-about">
+          <div class="info-no1">
+            <ul role="list" data-encore-id="typeList">
+              <p data-encore-id="type">Company</p>
+              <a
+                href="https://www.spotify.com/in-en/about-us/contact/"
+                role="link"
+                data-encore-id="textLink"
+                data-ga-category="menu"
+                data-ga-action="about"
+              >
+                <span data-encore-id="type">About</span>
+              </a>
+              <a
+                href="https://www.lifeatspotify.com/"
+                role="link"
+                data-encore-id="textLink"
+                data-ga-category="menu"
+                data-ga-action="jobs"
+              >
+                <span data-encore-id="type">Jobs</span>
+              </a>
+              <a
+                href="https://newsroom.spotify.com/"
+                role="link"
+                data-encore-id="textLink"
+                data-ga-category="menu"
+                data-ga-action="press"
+              >
+                <span data-encore-id="type">For the Record</span>
+              </a>
+            </ul>
+          </div>
+
+          <div class="info-no1">
+            <ul role="list" data-encore-id="typeList">
+              <p data-encore-id="type">Communities</p>
+              <a
+                href="https://artists.spotify.com/"
+                role="link"
+                data-encore-id="textLink"
+                data-ga-category="menu"
+                data-ga-action="artists"
+              >
+                <span data-encore-id="type">For Artists</span>
+              </a>
+              <a
+                href="https://developer.spotify.com/"
+                role="link"
+                data-encore-id="textLink"
+                data-ga-category="menu"
+                data-ga-action="developers"
+              >
+                <span data-encore-id="type">Developers</span>
+              </a>
+              <a
+                href="https://ads.spotify.com/"
+                role="link"
+                data-encore-id="textLink"
+                data-ga-category="menu"
+                data-ga-action="advertising"
+              >
+                <span data-encore-id="type">Advertising</span>
+              </a>
+              <a
+                href="https://investors.spotify.com/"
+                role="link"
+                data-encore-id="textLink"
+                data-ga-category="menu"
+                data-ga-action="investors"
+              >
+                <span data-encore-id="type">Investors</span>
+              </a>
+              <a
+                href="https://spotifyforvendors.com/"
+                role="link"
+                data-encore-id="textLink"
+                data-ga-category="menu"
+                data-ga-action="vendors"
+              >
+                <span data-encore-id="type">Vendors</span>
+              </a>
+            </ul>
+          </div>
+
+          <div class="info-no1">
+            <ul role="list" data-encore-id="typeList">
+              <p data-encore-id="type">Useful links</p>
+              <a
+                href="https://support.spotify.com/"
+                role="link"
+                data-encore-id="textLink"
+                data-ga-category="menu"
+                data-ga-action="help"
+              >
+                <span data-encore-id="type">Support</span>
+              </a>
+              <a
+                href="https://www.spotify.com/in-en/free/"
+                role="link"
+                data-encore-id="textLink"
+                data-ga-category="menu"
+                data-ga-action="free"
+              >
+                <span data-encore-id="type">Free Mobile App</span>
+              </a>
+              <a
+                href="https://open.spotify.com/popular-in/in"
+                role="link"
+                data-encore-id="textLink"
+                data-ga-category="menu"
+                data-ga-action="country-hub"
+              >
+                <span data-encore-id="type">Popular by Country</span>
+              </a>
+            </ul>
+          </div>
+
+          <div class="info-no1">
+            <ul role="list" data-encore-id="typeList">
+              <p data-encore-id="type">Spotify Plans</p>
+              <a
+                href="https://www.spotify.com/in-en/premium/#ref=spotifycom_footer_premium_individual"
+                role="link"
+                data-encore-id="textLink"
+                data-ga-category="menu"
+                data-ga-action="premium-individual-footer"
+              >
+                <span data-encore-id="type">Premium Individual</span>
+              </a>
+              <a
+                href="https://www.spotify.com/in-en/duo/#ref=spotifycom_footer_premium_duo"
+                role="link"
+                data-encore-id="textLink"
+                data-ga-category="menu"
+                data-ga-action="premium-duo-footer"
+              >
+                <span data-encore-id="type">Premium Duo</span>
+              </a>
+              <a
+                href="https://www.spotify.com/in-en/family/#ref=spotifycom_footer_premium_family"
+                role="link"
+                data-encore-id="textLink"
+                data-ga-category="menu"
+                data-ga-action="premium-family-footer"
+              >
+                <span data-encore-id="type">Premium Family</span>
+              </a>
+              <a
+                href="https://www.spotify.com/in-en/student/#ref=spotifycom_footer_premium_student"
+                role="link"
+                data-encore-id="textLink"
+                data-ga-category="menu"
+                data-ga-action="premium-student-footer"
+              >
+                <span data-encore-id="type">Premium Student</span>
+              </a>
+              <a
+                href="https://www.spotify.com/in-en/free/#ref=spotifycom_footer_free"
+                role="link"
+                data-encore-id="textLink"
+                data-ga-category="menu"
+                data-ga-action="premium-free-footer"
+              >
+                <span data-encore-id="type">Spotify Free</span>
+              </a>
+            </ul>
+          </div>
+        </div>
+        <hr data-encore-id="horizontalRule" />
+        <div class="copyright">
+          <p class="copy" data-encore-id="type">© 2025 Spotify AB</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="song-info">
+        <img src="" class="song-img hidden" />
+        <p class="songname"></p>
+      </div>
+      <div class="music-svgs">
+        <audio id="audio-player"></audio>
+        <img src="backword.svg" alt="" class="svg-img-class invert" />
+        <img src="start.svg" alt="" class="start" />
+        <img src="forword.svg" alt="" class="forword svg-img-class invert" />
+        <div class="line"><span class="green-bg"></span></div>
+        <div class="circle"></div>
+        <div class="time-info">
+          <span class="current">0:00</span> / <span class="total">0:00</span>
+        </div>
+      </div>
+      <div class="anas-info">
+        <p class="h1">Anas - project</p>
+        <p class="h2">first spotify clone</p>
+        <a href="https://www.instagram.com/anas_asfnsa_/">Follow:Anas  <img src="insta.svg" alt=""></a>
+      </div>
+    </div>
+    <script src="singer.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

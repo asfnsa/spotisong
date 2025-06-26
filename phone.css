@@ -1,0 +1,463 @@
+@media screen and (max-width: 1200px) {
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    background: black;
+  }
+
+  .nav-bar {
+    width: 100%;
+    display: flex;
+    height: 51px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+
+  .left-nav {
+    display: flex;
+    gap: 2px;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 23px 0px 0px;
+  }
+
+  .logo {
+    margin-right: 10px;
+    width: 25px;
+  }
+  .home {
+    height: 30px;
+    width: 25px;
+    padding: 0 12px;
+    background-color: #e0e0e0;
+    border-radius: 40px;
+    display: none;
+  }
+
+  .sign {
+    display: none;
+  }
+  .login {
+    margin: 3px;
+    background-color: white;
+    height: 30px;
+    font-size: 10px;
+    width: 50px;
+    border-radius: 20px;
+    border: none;
+  }
+  .right-nav {
+    display: flex;
+    gap: 2px;
+    padding: 0px 0px 0px 10px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 1px;
+  }
+  .heading-1 {
+    display: none;
+  }
+  .hamburger {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    display: block;
+    margin-left: 10px;
+    border-radius: 0px 3px 3px 0px;
+  }
+  .search-bar {
+    background-color: rgb(31, 31, 31);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 11em;
+    height: 20px;
+    border: 2px solid rgb(165, 164, 164);
+    border-radius: 25px;
+  }
+  .search {
+    width: 12px;
+    padding-right: 7px;
+    padding-left: 6px;
+  }
+  .search-box {
+    font-size: 12px;
+    padding: 0 45px 0 5px;
+  }
+  .container,
+  .full-width,
+  .right-singer-box,
+  .right-singers-box-card,
+  .footer {
+    position: relative;
+    width: 100%;
+    max-width: 100vw;
+    box-sizing: border-box;
+  }
+  .left-box {
+    width: 100%;
+    height: 65.2vh;
+    background-color: rgb(18, 18, 18);
+    /* border-radius: 10px; */
+    margin: 0px 0;
+    position: absolute;
+    /* display: none; */
+    /* left: 100%; */
+    z-index: 1000;
+    transition: all 0.3s ease-in-out;
+  }
+
+  /* .left-box {
+    width: 100%;
+    height: auto;
+    background-color: rgb(18, 18, 18);
+    border-radius: 10px;
+    margin: 10px 0;
+    position: absolute;
+    top: 60px;
+    left: 100%;
+    z-index: 1000;
+    transition: left 0.3s ease-in-out;
+    display: block; /* important: display should always be block */
+  /* } */
+
+  /* .left-box.active {
+    left: 0%; /* 👈 slide in */
+  /* } */ 
+
+  .back-svg {
+    display: none;
+  }
+  .down-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 10px;
+    gap: 10px;
+    font-size: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .left-box-playlist-item {
+    width: 100%;
+    overflow-y: scroll;
+    background-color: rgb(31, 31, 31);
+    height: 52vh;
+    padding-top: 5px;
+}
+  .full-w {
+    width: 90%;
+  }
+
+  .right-box {
+    position: relative;
+    width: 100%;
+    height: 65vh;
+    background: linear-gradient(to bottom, rgb(41, 41, 41), rgb(0, 0, 0));
+    border-radius: 10px 0 0 10px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .librayry-card {
+    display: flex;
+    font-size: 10px;
+    padding: 3px;
+    margin: 5px 10px;
+    border: 2px solid rgb(165, 164, 164);
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 10px;
+    gap: 14px;
+    cursor: pointer;
+}
+.libirary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px 15px;
+}
+.choose-playlist {
+    background-color: rgb(40, 40, 40);
+    font-size: 17px;
+    font-weight: bold;
+    height: 17px;
+    padding: 4px 6px;
+    border-radius: 25px;
+}
+.plus-svg{
+  width: 20px;
+}
+  .right-box-big-box {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .right-box-small-box1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 6px 0px 13px;
+    height: 18px;
+    background-color: rgba(41, 41, 41, 0.452);
+    border-radius: 10px 10px 0px 0px;
+    width: 93%;
+    z-index: 100;
+  }
+  .right-box-small-box2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1px;
+    justify-content: flex-start;
+    padding: 34px 0px 20px 10px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+
+  .card {
+    width: 80px;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    position: relative;
+    height: auto;
+    padding: 4px;
+    background-color: transparent;
+    border-radius: 6px;
+    transition: transform 0.4s ease, background-color 0.3s;
+    cursor: pointer;
+  }
+  .animation-box1 {
+    width: 24px;
+    height: 24px;
+    left: 75%;
+  }
+  .animation-svg {
+    width: 10px;
+    height: 10px;
+  }
+  .card .card-img {
+    width: 68px;
+    height: 68px;
+    display: block;
+    border-radius: 8px;
+  }
+  .heading1 {
+    margin-top: 9px;
+    font-weight: bold;
+    word-wrap: break-word;
+    white-space: normal;
+    font-size: 8px;
+  }
+  .heading2 {
+    font-size: 6px;
+    font-weight: bold;
+    /* color: rgb(165, 164, 164); */
+    margin-top: 2px;
+  }
+  .right-box-1-heading {
+    font-size: 16px;
+    font-weight: bolder;
+  }
+  .right-box-2-heading {
+    font-size: 12px;
+    font-weight: bolder;
+  }
+  .right-singers-box-card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    justify-content: flex-start;
+    padding: 20px 6px 0 6px;
+  }
+  .hidden {
+    display: none;
+  }
+
+  .right-singer-small-box {
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 17px 0px 11px;
+    height: 22px;
+    background-color: rgba(41, 41, 41, 0.452);
+    border-radius: 10px 10px 0px 0px;
+    width: 92%;
+    z-index: 100;
+  }
+  .singer-heading1 {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .singer-heading2 {
+    font-size: 10px;
+    font-weight: bold;
+  }
+  .right-singer-box-inner {
+    width: 65px;
+    height: 65px;
+    padding: 6px 0px 0px 10px;
+    border-radius: 50% 50% 10px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  .singer-img {
+    width: 46px;
+    height: 47px;
+    border-radius: 50%;
+  }
+  .singer-name {
+    font-size: 7px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+
+  .information-about {
+    border-top: 1px solid white;
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    margin-top: 22px;
+    padding: 10px 8px;
+  }
+  .info-no1 ul p {
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+  }
+  .info-no1 ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: start;
+    gap: 4px;
+    font-family: "Inter", "Poppins", "Roboto", "Helvetica Neue", Helvetica,
+      Arial, sans-serif;
+    font-size: 8px;
+  }
+  .copy {
+    padding: 2px 30px;
+    position: absolute;
+    right: 0px;
+  }
+  .footer {
+    background-color: rgb(0, 0, 0);
+    height: 125px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    flex-direction: column;
+  }
+  .anas-info {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+  }
+  .anas-info,
+  .h1,
+  .h2 {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .anas-info a {
+    text-decoration: none;
+    color: white;
+    font-family: cursive;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .anas-info a img {
+    width: 20px;
+    height: 20px;
+  }
+  .song-info {
+    width: 60vw;
+    height: 3.5em;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    padding: 0px 4px;
+    gap: 3px;
+  }
+  .song-img {
+    position: absolute;
+    width: 6.5em;
+    height: 5.5em;
+    border-radius: 12px;
+    left: 5px;
+    bottom: 38px;
+  }
+  .songname {
+    font-size: 14px;
+  }
+
+  .music-svgs {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 0px 13px 0px;
+    width: 100%;
+    height: 3.5em;
+    background-color: transparent;
+    gap: 15px;
+  }
+
+  .svg-img-class {
+    width: 14px;
+  }
+  .start {
+    height: 18px;
+    padding: 10px;
+    /* width: 40px; */
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+  }
+  .line {
+    position: absolute;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    bottom: 6px;
+    left: 3px;
+    width: 100%;
+    height: 1px;
+    border: 1px solid white;
+    cursor: pointer;
+  }
+
+  .circle {
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    left: 0%;
+    transition: left 0.8s ease;
+    bottom: 4.6px;
+    cursor: pointer;
+  }
+  .time-info {
+    position: absolute;
+    right: 5px;
+    top: 38px;
+    font-size: 8px;
+  }
+}
